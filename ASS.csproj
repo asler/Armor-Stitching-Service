@@ -37,7 +37,7 @@
   <ItemGroup>
     <Reference Include="0Harmony, Version=2.9.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>BepInEx\core\0Harmony.dll</HintPath>
+      <HintPath>F:\SPT-AKI-DEV\BepInEx\core\0Harmony.dll</HintPath>
     </Reference>
     <Reference Include="Assembly-CSharp, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -56,7 +56,7 @@
       <HintPath>F:\SPT-AKI-DEV\EscapeFromTarkov_Data\Managed\Comfort.Unity.dll</HintPath>
     </Reference>
     <Reference Include="ConfigurationManager">
-      <HintPath>F:\SPT-AKI-DEV\BepInEx\plugins\ConfigurationManager.dll</HintPath>
+      <HintPath>F:\SPT-AKI-DEV\BepInEx\plugins\spt\ConfigurationManager.dll</HintPath>
     </Reference>
     <Reference Include="ItemComponent.Types, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>

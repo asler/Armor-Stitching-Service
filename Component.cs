@@ -16,7 +16,7 @@ namespace armorMod
         internal static float timeSinceLastHit = 0f;
         internal static float timeSinceLastRepair = 0f; // New variable to control repair frequency
         internal static Slot slotContents;
-        internal static InventoryControllerClass inventoryController;
+        internal static InventoryController inventoryController;
 
         internal static List<EquipmentSlot> equipmentSlotDictionary = new List<EquipmentSlot>
         {
@@ -43,7 +43,7 @@ namespace armorMod
         private void Start()
         {
             player = gameWorld.MainPlayer;
-            inventoryController = (InventoryControllerClass)AccessTools.Field(typeof(Player), "_inventoryController").GetValue(player);
+            inventoryController = (InventoryController)AccessTools.Field(typeof(Player), "_inventoryController").GetValue(player);
             player.BeingHitAction += ResetTimeSinceLastHit;
             Logger.LogDebug("AssComponent enabled successfully.");
         }
@@ -113,7 +113,7 @@ namespace armorMod
             }
         }
 
-        private static void ResetTimeSinceLastHit(DamageInfo dmgInfo, EBodyPart bodyPart, float hitEffectId)
+        private static void ResetTimeSinceLastHit(DamageInfoStruct dmgInfo, EBodyPart bodyPart, float hitEffectId)
         {
             timeSinceLastHit = 0f;
         }
