@@ -7,7 +7,7 @@ using EFT;
 
 namespace armorMod
 {
-    [BepInPlugin("com.dvize.ASS", "dvize.ASS", "1.7.1")]
+    [BepInPlugin("com.dvize.ASS", "dvize.ASS", "1.7.2")]
     public class AssPlugin : BaseUnityPlugin
     {
         internal static ConfigEntry<Boolean> ArmorServiceMode
