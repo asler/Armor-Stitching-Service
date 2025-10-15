@@ -130,7 +130,9 @@
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PostBuildEvent>copy "$(TargetPath)" "F:\SPT-AKI-DEV\BepInEx\plugins\$(TargetName).dll"
-copy "$(TargetPath)" "F:\SPT 4.0\BepInEx\plugins\$(TargetName).dll"
+	
+copy "$(TargetPath)" "J:\SPT 4.0\BepInEx\plugins\$(TargetName).dll"
+	
 if "$(ConfigurationName)" == "Debug" (
     copy "$(TargetDir)$(TargetName).pdb" "F:\SPT-AKI-DEV\BepInEx\plugins\$(TargetName).pdb"
 ) else (
