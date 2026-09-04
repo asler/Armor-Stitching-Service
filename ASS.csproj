@@ -47,7 +47,7 @@
     </Reference>
     <Reference Include="Assembly-CSharp, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>J:\SPT 4.0\EscapeFromTarkov_Data\Managed\Assembly-CSharp.dll</HintPath>
+      <HintPath>..\..\SPT 4.1\BepInEx\DumpedAssemblies\EscapeFromTarkov\Assembly-CSharp.dll</HintPath>
     </Reference>
     <Reference Include="BepInEx, Version=5.4.22.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -99,24 +99,22 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>J:\SPT 4.0\BepInEx\core\MonoMod.Utils.dll</HintPath>
     </Reference>
-    <Reference Include="spt-debugging">
-      <HintPath>J:\SPT 4.0\BepInEx\plugins\spt\spt-debugging.dll</HintPath>
-    </Reference>
-    <Reference Include="spt-reflection, Version=3.10.5.0, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="spt-common, Version=4.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>J:\SPT 4.0\BepInEx\plugins\spt\spt-reflection.dll</HintPath>
+      <HintPath>..\..\SPT 4.1\BepInEx\plugins\spt\spt-common.dll</HintPath>
     </Reference>
-    <Reference Include="spt-singleplayer">
-      <HintPath>J:\SPT 4.0\BepInEx\plugins\spt\spt-singleplayer.dll</HintPath>
+    <Reference Include="spt-reflection, Version=4.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SPT 4.1\BepInEx\plugins\spt\spt-reflection.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="UnityEngine, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>J:\SPT 4.0\EscapeFromTarkov_Data\Managed\UnityEngine.dll</HintPath>
+      <HintPath>..\..\SPT 4.1\EscapeFromTarkov_Data\Managed\UnityEngine.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>J:\SPT 4.0\EscapeFromTarkov_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+      <HintPath>..\..\SPT 4.1\EscapeFromTarkov_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.IMGUIModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -130,8 +128,7 @@
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PostBuildEvent>copy "$(TargetPath)" "F:\SPT-AKI-DEV\BepInEx\plugins\$(TargetName).dll"
-	
-copy "$(TargetPath)" "J:\SPT 4.0\BepInEx\plugins\$(TargetName).dll"
+copy "$(TargetPath)" "J:\SPT 4.1\BepInEx\plugins\$(TargetName).dll"
 	
 if "$(ConfigurationName)" == "Debug" (
     copy "$(TargetDir)$(TargetName).pdb" "F:\SPT-AKI-DEV\BepInEx\plugins\$(TargetName).pdb"

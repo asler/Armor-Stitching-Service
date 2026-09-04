@@ -5,6 +5,7 @@ using EFT;
 using EFT.InventoryLogic;
 using HarmonyLib;
 using UnityEngine;
+using EFT.Ballistics;
 
 namespace armorMod
 {
@@ -113,7 +114,7 @@ namespace armorMod
             }
         }
 
-        private static void ResetTimeSinceLastHit(DamageInfoStruct dmgInfo, EBodyPart bodyPart, float hitEffectId)
+        private static void ResetTimeSinceLastHit(DamageInfo dmgInfo, EBodyPart bodyPart, float hitEffectId)
         {
             timeSinceLastHit = 0f;
         }
